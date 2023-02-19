@@ -1,6 +1,6 @@
 # FLYING CATS
 
-  ![logo of a cat with wings](./src/images/logo-cat-tr.png)
+  ![logo of a cat with wings](./src/images/logo-cat-tr.svg)
 
   :cat2: :bird: :rocket: <br> 
   The main goal of the project was to exersice on responsive layout and mobile first approach<br>
