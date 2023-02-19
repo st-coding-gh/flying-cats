@@ -1,0 +1,39 @@
+# deploy
+name: CI/CD
+
+on: 
+  push:
+    branches: 
+      - main
+  workflow_dispatch:
+
+jobs: 
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      
+    - name: checkout
+      uses: actions/checkout@v3
+          
+    - name: npm install
+      run : npm install
+      
+    - name: remove
+      run : rm -R .git .github readme.md node_modules package.json package-lock.json .gitignore ./src/styles/scss
+      
+    - name: list folders
+      run : ls -la
+    
+    # - run: set -eu
+    - name: make a dir for SSH
+      run: mkdir "$HOME/.ssh"
+
+    - name: copy key from secrets  
+      run: echo "${{ secrets.key }}" > "$HOME/.ssh/key"
+
+    - name: set access rights      
+      run: chmod 600 "$HOME/.ssh/key"
+      
+    - name: upload to server
+      run: rsync -e "ssh -p 22 -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . ${{ secrets.USER}}@${{ secrets.SERVER_NAME }}:${{ secrets.DIR }}

@@ -1,0 +1,23 @@
+*,
+h1,
+h2,
+h3,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+html {
+  font-size: 10px;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}

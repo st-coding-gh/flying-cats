@@ -1,0 +1,20 @@
+{
+  "name": "project-test",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "npx http-server -c-1 -p 5500",
+    "sass-watch": "npx sass ./src/styles/scss/main.scss ./src/styles/main.css -w",
+    "postinstall": "npx sass ./src/styles/scss/main.scss ./src/styles/main.css"
+  },
+  "author": "Sergey Tikhonov",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "sass": "^1.58.0"
+  }
+}
