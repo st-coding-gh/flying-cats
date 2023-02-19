@@ -37,3 +37,6 @@ jobs:
       
     - name: upload to server
       run: rsync -e "ssh -p 22 -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . ${{ secrets.USER}}@${{ secrets.SERVER_NAME }}:${{ secrets.DIR }}
+
+    - name: upload to server 2
+      run: rsync -e "ssh -p 22 -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . ${{ secrets.USER_2}}@${{ secrets.SERVER_NAME_2 }}:${{ secrets.DIR_2 }}
