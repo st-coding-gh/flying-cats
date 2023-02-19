@@ -1,5 +1,7 @@
 # FLYING CATS
 
+  ![logo of a cat with wings](./src/images/logo-cat-tr-2.png)
+
   :cat2: :bird: :rocket: <br> 
   The main goal of the project was to exersice on responsive layout and mobile first approach<br>
   The template was designed in Figma, the pictures were created in Midjourney and the text was provided by ChatGPT<br>
