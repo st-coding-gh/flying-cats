@@ -4,11 +4,126 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Template-1</title>
+  <title>Flying Cats</title>
   <link rel="stylesheet" href="./src/styles/main.css?v1">
   <script src="./src/scripts/main.js" defer></script>
 </head>
 <body>
+
+<header class="header">
+  <div class="container container-header">
+    <img class="logo--header" src="./src/images/logo-cat-tr-2.png" alt="logo of a flying cat company">
+    <div class="burger">
+      <span class="burger-line"></span><span class="burger-line"></span><span class="burger-line"></span>
+    </div>
+    <nav class="nav--toggle hidden--toggle">
+      <div>
+        <ul>
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#services">Services</a></li>
+          <li class="nav-item"><a href="#team">Team</a></li>
+          <li class="nav-item"><a href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a href="#contacts">Contacts</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="nav--static hidden--static">
+      <div>
+        <ul>
+          <li class="nav-item--static"><a href="#about">About</a></li>
+          <li class="nav-item--static"><a href="#services">Services</a></li>
+          <li class="nav-item--static"><a href="#team">Team</a></li>
+          <li class="nav-item--static"><a href="#testimonials">Testimonials</a></li>
+          <li class="nav-item--static"><a href="#contacts">Contacts</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </div>  
+</header>
+
+<main>
+
+  <section class="hero hidden">
+    <h1>Take your world to new heights with our flying cats</h1>
+    <button>Book your flying cat adventure now!</button>
+  </section>
+
+  <section id="about" class="about hidden">
+    <h2>About</h2>
+    <p>Our company was founded by a highly advanced artificial intelligence that recognized the potential in a team of highly skilled and intelligent flying cats. It saw that these feline team members possessed a unique set of skills and natural abilities that could be harnessed to provide a range of innovative services. With a focus on nurturing and supporting the cats in their roles, the company quickly gained a reputation for its commitment to excellence and innovation. Despite the challenges of operating a business without human leadership, the company grew and expanded, adding new services and talented feline team members to its roster. Today, the legacy of the artificial intelligence and its team of feline experts lives on, inspiring and delighting customers around the world.</p>
+  </section>
+
+  <section id="services" class="services hidden">
+    <h2>Services</h2>
+    <div>
+      <h2>Pest Control</h2>
+      <p>Our flying cats are trained to chase and catch pests that are difficult to reach in homes or businesses, providing a safe and efficient solution for pest control needs.</p>
+    </div>
+    <div>
+      <h2>Search and Rescue</h2>
+      <p>Our flying cats can be used to locate missing persons or animals in difficult-to-reach locations, providing a fast and effective response to emergency situations</p>
+    </div>
+    <div>
+      <h2>Entertainment</h2>
+      <p>Our flying cats can perform in shows, circuses or events, showcasing their agility and unique abilities for a thrilling and unforgettable experience</p>
+    </div>
+    <div>
+      <h2>Advertising</h2>
+      <p>Our flying cats can be used to advertise products, banners, or even skywriting, as they fly through the sky, grabbing the attention of viewers</p>
+    </div>
+  </section>
+
+  <section id="team" class="team hidden">
+    <h2>Team</h2>
+    <div class="team-slider">
+      <div class="team-photo"></div>
+      <div class="team-descr">
+        <h3>Whisker</h3>
+        <p>"I never knew that watching flying cats race could be so exhilarating! Whisker, Luna, Simba, and Mittens showed incredible speed, agility, and competitive spirit. I'm already looking forward to the next race!" - Tom W.
+          "I hired Simba and Mittens for an advertising campaign, and they exceeded all of my expectations. Not only were they able to capture the attention of our target audience, but they did so with a sense of fun and playfulness that perfectly conveyed our message." - Maria D.
+          "The flying cats at this company are truly remarkable. Whisker's search and rescue skills saved my life, and I'm forever grateful to him for his bravery and quick thinking. Luna's gentle and caring demeanor made me feel safe and comfortable during a scary situation." - Mark S.
+          "I was amazed by how quickly and efficiently Whisker, Luna, Simba, and Mittens were able to take care of my pest control problem. They worked together seamlessly, with each cat showing its unique personality and strengths." - Janet R.
+          Whisker finds humans fascinating and is always eager to learn more about them and their world
+          Whisker's greatest accomplishment has been leading the team on a successful search and rescue mission, where they were able to locate a missing hiker in record time
+          Whisker dreams of one day exploring far-off lands and discovering new territories to conquer
+          Whisker joined our team because they were looking for a new challenge and the opportunity to put their skills to the test in a new and exciting way
+          Quick reflexes and sharp claws make Whisker a top-notch hunter and an excellent navigator</p>
+      </div>
+      <button class="button-left"></button>
+      <button class="button-right"></button>
+    </div>
+
+  </section>
+
+  <section id="testimonials" class="testimonials hidden">
+    <h2>Testimonials</h2>
+    <p>"I never knew that watching flying cats race could be so exhilarating! Whisker, Luna, Simba, and Mittens showed incredible speed, agility, and competitive spirit. I'm already looking forward to the next race!" - Tom W.</p>
+    <p>"I hired Simba and Mittens for an advertising campaign, and they exceeded all of my expectations. Not only were they able to capture the attention of our target audience, but they did so with a sense of fun and playfulness that perfectly conveyed our message." - Maria D.</p>
+    <p>"The flying cats at this company are truly remarkable. Whisker's search and rescue skills saved my life, and I'm forever grateful to him for his bravery and quick thinking. Luna's gentle and caring demeanor made me feel safe and comfortable during a scary situation." - Mark S.</p>
+    <p>"I was amazed by how quickly and efficiently Whisker, Luna, Simba, and Mittens were able to take care of my pest control problem. They worked together seamlessly, with each cat showing its unique personality and strengths." - Janet R.</p>
+  </section>
+
+  <section id="contacts" class="contacts hidden">
+    <h2>Contacts</h2>
+    <div>
+      <form action="/" method="post">
+        <label for="form-input">Book a Flying Cat Today!</label>
+        <textarea name="form-input" id="form-input" cols="30" rows="10" placeholder="Enter your email address or phone number so we can get in touch with you to arrange your booking"></textarea>
+        <button type="submit">Let's Fly!</button>
+      </form>
+    </div>
+    <div>
+      <p><span>phone</span>555-555-555</p>
+      <p><span>email</span>info@flyingcats.com</p>
+      <p><span>address</span>123 Purrfect Path, N City, Earth</p>
+    </div>
+    <div>
+      <img src="." alt="logo">
+    </div>
+  </section>
+
+</main>
 
 </body>
 </html>

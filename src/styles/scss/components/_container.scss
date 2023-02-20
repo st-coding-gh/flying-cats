@@ -1,0 +1,11 @@
+.container {
+
+  padding: 0 0.5rem;
+
+  &-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

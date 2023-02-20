@@ -6,7 +6,11 @@
 @use './fonts/fonts';
 
 // SECTIONS
-// @use './sections/***';
+@use './sections/header';
 
 // COMPONENTS
-// @use './components/***';
+@use './components/hidden';
+@use './components/logo';
+@use './components/burger';
+@use './components/container';
+@use './components/nav';

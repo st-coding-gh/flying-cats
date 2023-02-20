@@ -1,0 +1,23 @@
+@use '../variables/variables' as *;
+
+.hidden {
+
+  display: none;
+
+  &--toggle {
+    display: none;
+  }
+
+  &--static {
+    display: none;
+  }
+  
+}
+
+@media (min-width: $tablet-min) {
+  .hidden {
+    &--static {
+      display: initial;
+    }
+  }
+}

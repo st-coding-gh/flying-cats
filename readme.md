@@ -17,25 +17,25 @@
   - [x] .gitignore
   - [x] readme
   - [x] nmp init
-  - [ ] git hub actions
-  - [ ] deploy test
+  - [x] git hub actions
+  - [x] deploy test
     
   **CONTENT EXTRACTION**
-  - [ ] text
-  - [ ] pictures
-  - [ ] picture trimming
+  - [x] text
+  - [x] pictures
+  - [x] picture trimming
 
   **HTML**
-  - [ ] semantics
-  - [ ] https://validator.w3.org/
+  - [x] semantics
+  - [x] https://validator.w3.org/
     
   **CSS**
-  - [ ] scss
-  - [ ] normalize.css
-  - [ ] fonts https://webfonts.pro/ 
-  - [ ] font conversion https://onlinefontconverter.com/
+  - [x] scss
+  - [x] normalize.css
+  - [x] fonts https://webfonts.pro/ 
+  - [x] font conversion https://onlinefontconverter.com/
   - [ ] fonts in CSS
-  - [ ] box-sizing: border-box
+  - [x] box-sizing: border-box
   - [ ] BEM naming: blockName-elementName--modName
   - [ ] pixel perfect
   - [ ] mobile CSS
