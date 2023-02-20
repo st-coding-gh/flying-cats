@@ -1,0 +1,26 @@
+@use '../variables/variables' as *;
+
+.hero {
+  height: 100vh;
+  background-image: url('../images/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 10rem;
+
+  &-heading {
+    color: $color-white;
+  }
+}
+
+@media (min-width: $tablet-max) {
+  .hero {
+    padding-top: 14rem;
+  }
+}
+
+@media (min-width: $desktop-min) {
+  .hero {
+    padding-top: 18.5rem;
+  }
+}

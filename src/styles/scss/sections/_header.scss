@@ -1,9 +1,33 @@
-.header {
-  height: 100vh;
-  background-image: url('../images/hero-bg.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+@use '../variables/variables' as *;
 
+.header {
+  position: absolute;
+  width: 100%;
   padding: 2rem;
+
+  &-position {
+    &--burger {
+      align-items: flex-end;
+    }
+  }
+}
+
+@media (min-width: $tablet-max) {
+  .header {  
+    &-position {
+      &--navStatic {
+        grid-column: 2 / 8;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-min) {
+  .header {  
+    &-position {
+      &--navStatic {
+        grid-column: 3 / 13;
+      }
+    }
+  }
 }

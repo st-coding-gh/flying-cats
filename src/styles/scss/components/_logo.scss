@@ -1,8 +1,25 @@
-.logo {
+@use '../variables/variables' as *;
 
+.logo {
   &--header {
     z-index: 10;
-    max-width: 50px;
+    max-width: 6rem;
   }
+}
 
+@media (min-width: $tablet-max) {
+  .logo {
+    &--header {
+      max-width: 10rem;
+    }
+  }
+}
+
+@media (min-width: $desktop-min) {
+  .logo {
+    &--header {
+      max-width: 14.5rem;
+      grid-column: span 2;
+    }
+  }
 }

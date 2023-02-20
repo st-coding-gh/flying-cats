@@ -1,11 +1,25 @@
+@use '../variables/variables' as *;
+
 .container {
 
-  padding: 0 0.5rem;
+  max-width: 124.0rem;
+  margin: 0 auto;
 
-  &-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  padding: 0 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  
+}
+
+@media (min-width: $tablet-max) {
+  .container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (min-width: $desktop-min) {
+  .container {
+    grid-template-columns: repeat(12, 1fr);
   }
 }

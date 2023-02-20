@@ -10,17 +10,18 @@
   }
 
   &-item--static {
-    padding: 1rem;
+    padding: 0.7rem;
     color: $color-white;
     font-size: 1.5rem;
     text-transform: uppercase;
+    text-shadow: 0 0 20px $color-orange--dark;
   }
 
   &--toggle {
     position: absolute;
     z-index: 5;
     top: 0;
-    bottom: 0;
+    bottom: -84vh;
     right: 0;
     left: 0;
     background-color: $color-dark;
@@ -39,7 +40,15 @@
     & div ul {
       display: flex;
       flex-direction: row;
+      justify-content: space-around;
     }
   }
+}
 
+@media (min-width: $desktop-min) {
+  .nav {  
+    &-item--static {
+      font-size: 2.3rem;
+    }
+  } 
 }
