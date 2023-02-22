@@ -34,7 +34,8 @@
     font-size: 3.5rem;
   }
 
-  &-button {
+  &-image {
+    filter: drop-shadow(0 0 2rem $color-light);
   }
 
 }
