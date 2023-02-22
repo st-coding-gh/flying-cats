@@ -13,3 +13,10 @@
   text-transform: uppercase;
   font-size: 1.5rem;
 }
+
+@media (min-width: $desktop-min) {
+  .button {
+      font-size: 2.5rem;
+    }
+  
+}
