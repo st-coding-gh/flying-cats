@@ -58,6 +58,7 @@
       &--right {
         display: initial;
         grid-column: 4 / 7;
+        transform: translateX(5px);
       }
     }
   }

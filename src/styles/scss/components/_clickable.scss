@@ -1,0 +1,9 @@
+@use '../variables/variables' as *;
+
+.clickable:hover {
+  filter: drop-shadow(0 0 2rem $color-light);
+}
+
+.clickable:active {
+  filter: drop-shadow(0 0 3rem $color-light);
+}
