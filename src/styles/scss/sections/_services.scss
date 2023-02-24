@@ -1,0 +1,107 @@
+@use '../variables/variables' as *;
+
+.services {
+  color: $color-white;
+
+  &-item {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  &-iconGroup {
+    width: 15rem;
+    margin-bottom: 1rem;
+  }
+
+  &-itemHeading {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: min(3.2vw, 1.5rem);
+  }
+
+  &-itemText {
+    max-width: 25ch;
+    font-family: "Rajdhani";
+    font-weight: 700;
+    font-size: min(4.5vw, 2.1rem);
+  }
+
+  &-icon {
+    display: block;
+    fill: $color-white;
+    width: 100%;
+  }
+}
+
+@media (min-width: $tablet-min) {
+  .services {
+
+    &-container.container {
+      align-items: start;
+    }
+  
+    &-item {
+      grid-column: span 3;
+      flex-direction: column;
+    }
+  
+    &-iconGroup {
+    }
+  
+    &-itemHeading {
+      font-size: min(2vw, 1.35rem);
+      min-height: 3rem;
+    }
+  
+    &-itemText {
+      font-size: min(2vw, 1.5rem);
+      padding-left: 2rem;
+      max-width: 22ch;
+    }
+  
+    &-icon {
+    }
+  }
+}
+
+@media (min-width: $tablet-max) {
+  .services {
+   
+    &-itemHeading {
+      font-size: min(2vw, 1.8rem);
+      min-height: 5rem;
+    }
+  
+    &-itemText {
+      font-size: min(2vw, 2rem);
+      padding-left: 3rem;
+      max-width: 20ch;
+    }
+
+    &-iconGroup {
+      width: 20rem;
+    }
+  }
+}
+
+@media (min-width: $desktop-min) {
+  .services {
+   
+    &-itemHeading {
+      font-size: min(2vw, 2rem);
+      min-height: 5rem;
+    }
+  
+    &-itemText {
+      font-size: min(2vw, 2rem);
+      padding-left: 3rem;
+      // max-width: 14ch;
+    }
+
+    &-iconGroup {
+      width: 25rem;
+    }
+  }
+}

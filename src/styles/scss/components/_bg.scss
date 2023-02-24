@@ -1,0 +1,26 @@
+.bg {
+  position: relative;
+
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(0.15rem);
+  }
+
+  &-hero::before {
+    background-image: url('../images/hero-bg.png');
+  }
+
+  &-services::before {
+    background-image: url('../images/services-bg.png');
+  }
+
+}

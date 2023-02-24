@@ -2,8 +2,6 @@
 
 .about {
 
-  padding-bottom: 2rem;
-
   &-image {
     grid-column: span 2;
     height: 40vw;
@@ -29,10 +27,8 @@
 @media (min-width: $tablet-min) {
   .about {
 
-    padding-bottom: 3rem;
-
     &-image {
-      grid-column: span 2;
+      grid-column: span 4;
       height: 100%;
       margin-bottom: 0;
       & img {
@@ -42,7 +38,7 @@
 
     &-text {
       font-size: 2rem;
-      grid-column: span 4;
+      grid-column: span 8;
       padding-left: 1rem;
     }
   }
