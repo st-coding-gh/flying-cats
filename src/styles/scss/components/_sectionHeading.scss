@@ -1,0 +1,15 @@
+@use '../variables/variables' as *;
+
+.sectionHeading {
+  grid-column: span 2;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 3.5rem;
+}
+
+@media (min-width: $desktop-min) {
+  .sectionHeading {
+    font-size: 5.5rem;
+    padding: 4rem 0;
+  }
+}

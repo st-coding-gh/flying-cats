@@ -8,6 +8,7 @@
 // SECTIONS
 @use './sections/header';
 @use './sections/hero';
+@use './sections/about';
 
 // COMPONENTS
 @use './components/hidden';
@@ -17,3 +18,4 @@
 @use './components/nav';
 @use './components/button';
 @use './components/clickable';
+@use './components/sectionHeading';

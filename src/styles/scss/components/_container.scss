@@ -12,7 +12,7 @@
   
 }
 
-@media (min-width: $tablet-max) {
+@media (min-width: $tablet-min) {
   .container {
     grid-template-columns: repeat(6, 1fr);
   }

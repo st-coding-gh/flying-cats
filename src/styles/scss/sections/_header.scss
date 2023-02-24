@@ -12,11 +12,11 @@
   }
 }
 
-@media (min-width: $tablet-max) {
+@media (min-width: $tablet-min) {
   .header {  
     &-position {
       &--navStatic {
-        grid-column: 2 / 8;
+        grid-column: 2 / 7;
       }
     }
   }

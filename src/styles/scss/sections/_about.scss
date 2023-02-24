@@ -1,0 +1,73 @@
+@use '../variables/variables' as *;
+
+.about {
+
+  padding-bottom: 2rem;
+
+  &-image {
+    grid-column: span 2;
+    height: 40vw;
+    margin-bottom: 2rem;
+    
+    & img {
+      filter: hue-rotate(180deg);
+      border-radius: 1rem;
+      object-fit: cover;
+      object-position: 0 -62px;
+      height: 100%;
+    }
+  }
+
+  &-text {
+    font-family: 'Rajdhani';
+    font-weight: 400;
+    font-size: 2rem;
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: $tablet-min) {
+  .about {
+
+    padding-bottom: 3rem;
+
+    &-image {
+      grid-column: span 2;
+      height: 100%;
+      margin-bottom: 0;
+      & img {
+        object-position: initial;
+      }
+    }
+
+    &-text {
+      font-size: 2rem;
+      grid-column: span 4;
+      padding-left: 1rem;
+    }
+  }
+}
+
+@media (min-width: $tablet-max) {
+  .about {
+    &-text {
+      font-size: 2.6rem;
+    }
+  }
+}
+
+@media (min-width: $desktop-min) {
+  .about {
+
+    padding-bottom: 4rem;
+
+    &-image {
+      grid-column: span 4;
+    }
+
+    &-text {
+      font-size: 3rem;
+      grid-column: span 8;
+    }
+  }
+}
