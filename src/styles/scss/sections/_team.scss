@@ -1,0 +1,33 @@
+@use '../variables/variables' as *;
+
+.team {
+
+  height: 100vh;
+
+  &-container {
+    height: 100%;
+  }
+
+  &-slider {
+    grid-column: span 2;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &-buttonGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+}

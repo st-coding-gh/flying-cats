@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flying Cats</title>
   <link rel="stylesheet" href="./src/styles/main.css?v1">
-  <script src="./src/scripts/main.js" defer></script>
+  <script src="./src/scripts/main.js" type="module" defer></script>
 </head>
 <body>
 
@@ -100,24 +100,26 @@
     </div>
   </section>
 
-  <section id="team" class="team hidden">
-    <h2>Team</h2>
-    <div class="team-slider">
-      <div class="team-photo"></div>
-      <div class="team-descr">
-        <h3>Whisker</h3>
-        <p>"I never knew that watching flying cats race could be so exhilarating! Whisker, Luna, Simba, and Mittens showed incredible speed, agility, and competitive spirit. I'm already looking forward to the next race!" - Tom W.
-          "I hired Simba and Mittens for an advertising campaign, and they exceeded all of my expectations. Not only were they able to capture the attention of our target audience, but they did so with a sense of fun and playfulness that perfectly conveyed our message." - Maria D.
-          "The flying cats at this company are truly remarkable. Whisker's search and rescue skills saved my life, and I'm forever grateful to him for his bravery and quick thinking. Luna's gentle and caring demeanor made me feel safe and comfortable during a scary situation." - Mark S.
-          "I was amazed by how quickly and efficiently Whisker, Luna, Simba, and Mittens were able to take care of my pest control problem. They worked together seamlessly, with each cat showing its unique personality and strengths." - Janet R.
-          Whisker finds humans fascinating and is always eager to learn more about them and their world
-          Whisker's greatest accomplishment has been leading the team on a successful search and rescue mission, where they were able to locate a missing hiker in record time
-          Whisker dreams of one day exploring far-off lands and discovering new territories to conquer
-          Whisker joined our team because they were looking for a new challenge and the opportunity to put their skills to the test in a new and exciting way
-          Quick reflexes and sharp claws make Whisker a top-notch hunter and an excellent navigator</p>
+  <section id="team" class="team">
+    <h2 class="sectionHeading">Team</h2>
+    <div class="container team-container">
+      <div class="team-slider">
+        <div class="team-photo-container">
+          <img class="team-photo" src="" alt="photo of a flying cat - team-member">
+        </div>
+        <div class="team-descr">
+          <h3 class="team-heading"></h3>
+          <p class="team-text"></p>
+        </div>
+        <div class="team-buttonGroup">
+          <button class="button button-left">
+            <svg class="button-arrow" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024.000000 500.000000" preserveAspectRatio="xMidYMid meet"> <g transform="translate(0.000000,750.000000) scale(0.100000,-0.100000)" stroke="none"> <path d="M7180 6306 c-52 -13 -167 -40 -255 -61 -452 -106 -764 -217 -1092 -390 l-163 -85 -1577 0 -1578 0 -210 -146 c-115 -80 -272 -187 -347 -237 -76 -51 -138 -95 -138 -99 0 -4 210 -7 467 -8 440 0 772 -7 1538 -30 176 -5 358 -10 405 -11 l85 -2 -75 -7 c-130 -14 -2096 -43 -2390 -35 -271 6 -274 6 -250 -12 14 -11 90 -64 170 -118 80 -54 253 -176 385 -270 132 -94 246 -175 254 -179 8 -5 737 -10 1620 -11 l1606 -2 110 -74 c299 -201 891 -449 1359 -569 105 -27 191 -48 193 -46 2 2 -27 28 -64 58 -37 30 -138 117 -223 192 -85 76 -233 199 -327 274 l-173 137 43 3 c23 2 148 -2 277 -8 494 -24 497 -24 480 -7 -16 15 -78 58 -545 372 -154 103 -289 196 -300 206 -19 19 2 19 887 19 942 0 963 -1 1061 -43 55 -23 61 -22 197 40 l75 34 -113 50 c-105 46 -115 48 -140 35 -15 -8 -56 -24 -92 -37 l-65 -24 -959 -3 c-839 -2 -957 -1 -947 12 7 8 58 46 114 84 110 75 229 158 582 405 124 87 287 197 363 244 94 58 128 84 107 81 -16 -3 -252 -57 -523 -121 -271 -65 -498 -117 -505 -117 -15 1 11 21 197 148 329 226 449 304 521 338 110 52 102 55 -45 20z"/> <path d="M4910 3037 c-3 -2 -180 -7 -395 -11 -214 -4 -401 -8 -415 -10 -14 -2 -164 -7 -335 -11 -170 -4 -398 -13 -505 -19 -188 -12 -192 -12 -110 -19 47 -3 153 -9 235 -12 83 -3 173 -8 200 -10 68 -6 436 -23 795 -36 635 -23 1574 -10 2235 32 94 6 272 14 397 17 124 4 230 10 234 15 4 4 -15 7 -42 8 -27 0 -69 2 -94 4 -25 1 -169 6 -320 9 -151 4 -300 8 -330 11 -30 2 -185 7 -345 11 -159 3 -297 8 -306 9 -26 5 -894 17 -899 12z"/> </g> </svg>
+          </button>
+          <button class="button button-right">
+            <svg class="button-arrow" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024.000000 500.000000" preserveAspectRatio="xMidYMid meet"> <g transform="translate(0.000000,750.000000) scale(0.100000,-0.100000)" stroke="none"> <path d="M7180 6306 c-52 -13 -167 -40 -255 -61 -452 -106 -764 -217 -1092 -390 l-163 -85 -1577 0 -1578 0 -210 -146 c-115 -80 -272 -187 -347 -237 -76 -51 -138 -95 -138 -99 0 -4 210 -7 467 -8 440 0 772 -7 1538 -30 176 -5 358 -10 405 -11 l85 -2 -75 -7 c-130 -14 -2096 -43 -2390 -35 -271 6 -274 6 -250 -12 14 -11 90 -64 170 -118 80 -54 253 -176 385 -270 132 -94 246 -175 254 -179 8 -5 737 -10 1620 -11 l1606 -2 110 -74 c299 -201 891 -449 1359 -569 105 -27 191 -48 193 -46 2 2 -27 28 -64 58 -37 30 -138 117 -223 192 -85 76 -233 199 -327 274 l-173 137 43 3 c23 2 148 -2 277 -8 494 -24 497 -24 480 -7 -16 15 -78 58 -545 372 -154 103 -289 196 -300 206 -19 19 2 19 887 19 942 0 963 -1 1061 -43 55 -23 61 -22 197 40 l75 34 -113 50 c-105 46 -115 48 -140 35 -15 -8 -56 -24 -92 -37 l-65 -24 -959 -3 c-839 -2 -957 -1 -947 12 7 8 58 46 114 84 110 75 229 158 582 405 124 87 287 197 363 244 94 58 128 84 107 81 -16 -3 -252 -57 -523 -121 -271 -65 -498 -117 -505 -117 -15 1 11 21 197 148 329 226 449 304 521 338 110 52 102 55 -45 20z"/> <path d="M4910 3037 c-3 -2 -180 -7 -395 -11 -214 -4 -401 -8 -415 -10 -14 -2 -164 -7 -335 -11 -170 -4 -398 -13 -505 -19 -188 -12 -192 -12 -110 -19 47 -3 153 -9 235 -12 83 -3 173 -8 200 -10 68 -6 436 -23 795 -36 635 -23 1574 -10 2235 32 94 6 272 14 397 17 124 4 230 10 234 15 4 4 -15 7 -42 8 -27 0 -69 2 -94 4 -25 1 -169 6 -320 9 -151 4 -300 8 -330 11 -30 2 -185 7 -345 11 -159 3 -297 8 -306 9 -26 5 -894 17 -899 12z"/> </g> </svg>
+          </button>
+        </div>
       </div>
-      <button class="button-left"></button>
-      <button class="button-right"></button>
     </div>
 
   </section>
