@@ -55,7 +55,8 @@
     <div class="container hero-container">
       <div class="hero-area--left">
         <h1 class="hero-heading">Take your world to new heights with our flying cats</h1>
-        <button class="button hero-button clickable">Book your flying cat adventure now!</button>
+        <!-- <button class="button hero-button clickable">Book your flying cat adventure now!</button> -->
+        <a class="button hero-button clickable" href="#form-input">Book your flying cat adventure now!</a>
       </div>
       <div class="hero-area--right">
         <img class="hero-image" src="./src/images/cat-hero-tr.png" alt="image of a cat with wings">
@@ -134,30 +135,34 @@
 
   </section>
 
-  <section id="testimonials" class="testimonials hidden">
-    <h2>Testimonials</h2>
-    <p>"I never knew that watching flying cats race could be so exhilarating! Whisker, Luna, Simba, and Mittens showed incredible speed, agility, and competitive spirit. I'm already looking forward to the next race!" - Tom W.</p>
-    <p>"I hired Simba and Mittens for an advertising campaign, and they exceeded all of my expectations. Not only were they able to capture the attention of our target audience, but they did so with a sense of fun and playfulness that perfectly conveyed our message." - Maria D.</p>
-    <p>"The flying cats at this company are truly remarkable. Whisker's search and rescue skills saved my life, and I'm forever grateful to him for his bravery and quick thinking. Luna's gentle and caring demeanor made me feel safe and comfortable during a scary situation." - Mark S.</p>
-    <p>"I was amazed by how quickly and efficiently Whisker, Luna, Simba, and Mittens were able to take care of my pest control problem. They worked together seamlessly, with each cat showing its unique personality and strengths." - Janet R.</p>
+  <section id="testimonials" class="testimonials bg bg-testimonials">
+    <h2 class="sectionHeading">Testimonials</h2>
+    <div class="container">
+      <p class="testimonials-item">"I never knew that watching flying cats race could be so exhilarating! Whisker, Luna, Simba, and Mittens showed incredible speed, agility, and competitive spirit. I'm already looking forward to the next race!" - <span class="testimonials-author">Tom W.</span></p>
+      <p class="testimonials-item">"I hired Simba and Mittens for an advertising campaign, and they exceeded all of my expectations. Not only were they able to capture the attention of our target audience, but they did so with a sense of fun and playfulness that perfectly conveyed our message." - <span class="testimonials-author">Maria D.</span></p>
+      <p class="testimonials-item">"The flying cats at this company are truly remarkable. Whisker's search and rescue skills saved my life, and I'm forever grateful to him for his bravery and quick thinking. Luna's gentle and caring demeanor made me feel safe and comfortable during a scary situation." - <span class="testimonials-author">Mark S.</span></p>
+      <p class="testimonials-item">"I was amazed by how quickly and efficiently Whisker, Luna, Simba, and Mittens were able to take care of my pest control problem. They worked together seamlessly, with each cat showing its unique personality and strengths." - <span class="testimonials-author">Janet R.</span></p>
+    </div>
   </section>
 
-  <section id="contacts" class="contacts hidden">
-    <h2>Contacts</h2>
-    <div>
-      <form action="/" method="post">
-        <label for="form-input">Book a Flying Cat Today!</label>
-        <textarea name="form-input" id="form-input" cols="30" rows="10" placeholder="Enter your email address or phone number so we can get in touch with you to arrange your booking"></textarea>
-        <button type="submit">Let's Fly!</button>
-      </form>
-    </div>
-    <div>
-      <p><span>phone</span>555-555-555</p>
-      <p><span>email</span>info@flyingcats.com</p>
-      <p><span>address</span>123 Purrfect Path, N City, Earth</p>
-    </div>
-    <div>
-      <img src="." alt="logo">
+  <section id="contacts" class="contacts">
+    <h2 class="sectionHeading">Contacts</h2>
+    <div class="container">
+      <div class="contacts-item">
+        <form class="contacts-form" action="/" method="get">
+          <label class="contacts-label" for="form-input">Book a Flying Cat Today!</label>
+          <textarea class="contacts-placeholder" name="form-input" id="form-input" cols="30" rows="10" placeholder="Enter your email address or phone number so we can get in touch with you to arrange your booking"></textarea>
+          <button class="button clickable" type="submit">Let's Fly!</button>
+        </form>
+      </div>
+      <div class="contacts-item">
+        <p class="contacts-details"><span class="contacts-type">phone</span>555-555-555</p>
+        <p class="contacts-details"><span class="contacts-type">email</span>info@flyingcats.com</p>
+        <p class="contacts-details"><span class="contacts-type">address</span>123 Purrfect Path, N City, Earth</p>
+      </div>
+      <div class="contacts-item contacts-logo">
+        <img src="./src/images/logo-cat-tr-2.png" alt="logo">
+      </div>
     </div>
   </section>
 

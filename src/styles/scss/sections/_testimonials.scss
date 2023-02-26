@@ -1,0 +1,41 @@
+@use '../variables/variables' as *;
+
+.testimonials {
+
+  color: $color-white;
+
+  &-item {
+    grid-column: span 2;
+    margin: 0 auto;
+    max-width: 30ch;
+    font-family: "Rajdhani";
+    font-weight: 700;
+    font-size: min(5.5vw, 2.1rem);
+    padding-bottom: 1.5rem;
+  }
+  &-author {
+    display: block;
+    color: $color-blue;
+    text-shadow: 3px 3px 2px #f37756;
+  }
+}
+
+@media (min-width: $tablet-min) {
+  .testimonials {
+    &-item {
+      grid-column: span 6;
+      padding: 0.7rem;
+    }
+  }
+}
+
+@media (min-width: $tablet-max) {
+  .testimonials {
+    &-item {
+      max-width: 20ch;
+      grid-column: span 3;
+      display: block;
+      font-size: min(5.5vw, 2.6rem);
+    }
+  }
+}

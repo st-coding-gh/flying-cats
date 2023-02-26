@@ -4,6 +4,7 @@
 
   height: 100vh;
   padding-top: 10rem;
+  overflow: hidden;
 
   &-container {
     height: 100%;
@@ -55,7 +56,7 @@
       &--right {
         display: initial;
         grid-column: 6 / 13;
-        transform: translateX(5px);
+        transform: translateX(10px);
       }
     }
   }
@@ -79,5 +80,17 @@
       font-size: 5.5rem;
     }
   
+  }
+}
+
+@media (min-width: 1655px) {
+  .hero-area--right img {
+    width: 150%;
+  }
+}
+
+@media (min-width: 1955px) {
+  .hero-area--right img {
+    width: 200%;
   }
 }
