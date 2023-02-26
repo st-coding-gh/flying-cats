@@ -43,7 +43,7 @@
   - [x] desktop CSS
   
   **EXTERNAL CHECK-LISTS and FINAL VALIDATION**
-  - [ ] http://recommend.maxgraph.ru/
-  - [ ] https://validator.w3.org/
-  - [ ] https://whatwg.org/validator/
-  - [ ] https://jigsaw.w3.org/css-validator/
+  - [x] http://recommend.maxgraph.ru/
+  - [x] https://validator.w3.org/
+  - [x] https://whatwg.org/validator/
+  - [x] https://jigsaw.w3.org/css-validator/
