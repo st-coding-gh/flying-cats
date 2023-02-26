@@ -34,14 +34,13 @@
   - [x] normalize.css
   - [x] fonts https://webfonts.pro/ 
   - [x] font conversion https://onlinefontconverter.com/
-  - [ ] fonts in CSS
+  - [x] fonts in CSS
   - [x] box-sizing: border-box
-  - [ ] BEM naming: blockName-elementName--modName
-  - [ ] pixel perfect
-  - [ ] mobile CSS
-  - [ ] intermediate breakpoints CSS
-  - [ ] desktop CSS
-  - [ ] validation: https://jigsaw.w3.org/css-validator/
+  - [x] BEM naming: blockName-elementName--modName
+  <!-- - [ ] pixel perfect -->
+  - [x] mobile CSS
+  - [x] intermediate breakpoints CSS
+  - [x] desktop CSS
   
   **EXTERNAL CHECK-LISTS and FINAL VALIDATION**
   - [ ] http://recommend.maxgraph.ru/
