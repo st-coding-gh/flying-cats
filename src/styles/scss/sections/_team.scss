@@ -2,10 +2,30 @@
 
 .team {
 
-  height: 100vh;
-
   &-container {
     height: 100%;
+  }
+
+  &-photoContainer {
+    width: 100%;
+    height: 70vw;
+  }
+
+  &-content {
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 1px solid $color-blue;
+    
+    box-shadow: 4px 4px 10px $color-orange;
+    
+  }
+
+  &-photo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
   }
 
   &-slider {
@@ -24,10 +44,72 @@
     justify-content: center;
   }
 
+  &-descr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0.5rem;
+  }
+
   &-heading {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 1rem;
   }
 
+  &-text {
+    font-family: "Rajdhani";
+    font-weight: 400;
+    font-size: 1.5rem;
+    max-width: 60ch;
+    height: 15rem;
+  }
+}
+
+@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+  .team {
+    &-slider {
+      grid-column: span 12;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    &-content {
+      display: flex;
+      height: min(95vh,33rem);
+    }
+    &-photoContainer {
+      height: initial;
+    }
+    &-descr {
+      justify-content: space-around;
+    }
+    &-buttonGroup {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+@media (min-width: $tablet-max) {
+  .team {
+    &-slider {
+      grid-column: span 12;
+    }
+    &-content {
+      display: flex;
+    }
+    &-photoContainer {
+      height: initial;
+      width: 50%;
+    }
+    &-descr {
+      justify-content: center;
+      padding: 1rem 1.5rem;
+      margin: 0 auto;
+    }
+    &-text {
+      font-size: 2rem;
+      max-width: 40ch;
+      height: initial;
+  }
+  }
 }

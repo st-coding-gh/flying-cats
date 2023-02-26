@@ -7,3 +7,11 @@
 .clickable:active {
   filter: drop-shadow(0 0 3rem $color-light);
 }
+
+.clickable--dark:hover {
+  filter: drop-shadow(0 0 1rem $color-dark);
+}
+
+.clickable--dark:active {
+  filter: drop-shadow(0 0 1.2rem $color-dark);
+}

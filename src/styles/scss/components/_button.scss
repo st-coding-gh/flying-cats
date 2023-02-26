@@ -16,17 +16,37 @@
   cursor: pointer;
 
   &-left {
-    width: 30vw;
+    width: 10rem;
+    margin: 1px;
   }
   &-right {
-    width: 30vw;
+    width: 10rem;
+    margin: 1px;
     & svg {
       transform: scale(-1, 1);
     }
   }
-
   &-arrow {
     fill: $color-white;
+  }
+}
+
+@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+  .button {
+    &-left {
+      width: 4rem;
+      height: 10rem;
+      & svg {
+        transform: rotate(-90deg) scale(2.5);
+      }
+    }
+    &-right {
+      width: 4rem;
+      height: 10rem;
+      & svg {
+        transform: rotate(90deg) scale(2.5);
+      }
+    }
   }
 }
 
