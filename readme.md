@@ -1,6 +1,7 @@
 # FLYING CATS
 
-  ![logo of a cat with wings](./src/images/logo-cat-tr.svg | width=100)
+  <!-- ![logo of a cat with wings](./src/images/logo-cat-tr.svg) -->
+  <img  src="./src/images/logo-cat-tr.svg" width='100px'>
 
   :cat2: :bird: :rocket: <br> 
   The main goal of the project was to exersice on responsive layout and mobile first approach<br>
