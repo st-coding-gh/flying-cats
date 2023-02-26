@@ -3,6 +3,7 @@
 .testimonials {
 
   color: $color-white;
+  overflow: hidden;
 
   &-item {
     grid-column: span 2;

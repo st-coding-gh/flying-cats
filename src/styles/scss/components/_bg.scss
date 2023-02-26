@@ -7,8 +7,9 @@
     position: absolute;
     z-index: -1;
     top: 0;
-    height: 100%;
-    width: 100%;
+    left: -2px;
+    height: 102%;
+    width: 102%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -16,15 +17,15 @@
   }
 
   &-hero::before {
-    background-image: url('../images/hero-bg.png');
+    background-image: url('../images/hero-bg.webp');
   }
 
   &-services::before {
-    background-image: url('../images/services-bg.png');
+    background-image: url('../images/services-bg.webp');
   }
 
   &-testimonials::before {
-    background-image: url('../images/testimonials-bg.png');
+    background-image: url('../images/testimonials-bg.webp');
   }
 
 }
