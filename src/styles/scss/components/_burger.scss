@@ -13,9 +13,6 @@
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
-  }
-
-  &-cross{
     position: relative;
   }
 
@@ -25,6 +22,7 @@
     height: 0.7rem;
     border-radius: 1rem;
     background-color: $color-blue;
+    transition: all 0.2s ease-in-out;
   }
 
   &-crossLine {
@@ -34,6 +32,9 @@
       transform: rotate(45deg);
     }
     &:nth-child(2){
+      transform: rotate(-45deg);
+    }
+    &:nth-child(3){
       transform: rotate(-45deg);
     }
   }
