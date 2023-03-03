@@ -18,6 +18,9 @@ const main = document.querySelector('.main');
   for (let each of navLink) {
     each.addEventListener('click', (event) => {
       nav.classList.toggle('hidden--toggle');
+      burgerLines.classList.toggle('hidden--toggle');
+      burgerCross.classList.toggle('hidden--toggle');
+      main.classList.toggle('hidden--toggle');
     });
   }
 }
