@@ -22,7 +22,8 @@
     position: absolute;
     z-index: 5;
     top: 0;
-    bottom: -84vh;
+    // bottom: -84vh;
+    height: 100svh;
     right: 0;
     left: 0;
     background-color: $color-dark;
