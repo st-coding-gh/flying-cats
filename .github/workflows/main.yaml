@@ -4,8 +4,7 @@ name: CI/CD
 on: 
   push:
     branches: 
-      # - main
-      - cross
+      - main
   workflow_dispatch:
 
 jobs: 
