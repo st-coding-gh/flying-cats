@@ -19,10 +19,10 @@
   }
 
   &--toggle {
+    display: none;
     position: absolute;
     z-index: 5;
     top: 0;
-    // bottom: -84vh;
     height: 100svh;
     right: 0;
     left: 0;
@@ -44,6 +44,14 @@
       flex-direction: row;
       justify-content: space-around;
     }
+  }
+}
+
+.nav-open {
+  height: 100svh;
+  overflow: hidden;
+  & .nav--toggle {
+    display: block;
   }
 }
 
